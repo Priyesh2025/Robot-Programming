@@ -1,0 +1,72 @@
+ros2 launch rover rviz.launch.py
+
+ros2 launch rover gazebo.launch.py
+
+ros2 topic list - lists all topics
+
+Rviz - for understanding structure
+Gazebo - for interaction with environment, moving robot etc.
+
+
+Place object and run that using teleope key.
+ros2 run teleop_twist_keyboard teleop_twist_keyboard   - using keys to control robot.
+
+ros2 run rqt_gui rqt_gui   - using gui to control robot, robot's POV.
+
+
+========================================================================================================================
+showed - follow_wall.py
+------------------------
+
+Step 1 ] compilation part - whenever we modify the file, we compile again.
+calcon build -- package-select rover                (Maybe asked in exam - command to compile all or any specific file)
+
+Step 2]
+ros2 launch rover gazebo.launch.py
+
+Step 3]
+Put some objects and make wall.
+
+Step 4]
+ros2 run rover follow_wall    (this name must be as in the setup file)
+
+========================================================================================================================
+opposite to above - obstacle_avoidind.py
+-----------------------------------------
+Modify the code if you have a good understanding of coding.
+
+
+
+Lets start with camera,
+
+Camera : 
+1] Image Processing and computer     - Process already captured images
+2] Compuetr Vision (CV)              - Real time image Processing
+3] Machine Vision                    - Not only take the image, also does the control using data. Visual Servoing
+
+Image Segmentation => Image age detection => . . . Step by Step, Next time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
