@@ -1,0 +1,34 @@
+LINE FOLLOWING ROBOT
+line_following.py
+Package name - pirus_car
+front camera added to the car.
+First we will operate it using teleope key. - ros2 run teleop_twist_keyboard teleop_twist_keyboard
+Package used - CV2 : computer vision library.
+
+
+
+-----This may be asked in exams------
+
+1] Image Segmentation 
+    Two parts - Light and Dark.
+    Kind of filter.
+    light line = numpy.array([100 , 100 , 100])   # the RGB value < 100 make them all light
+    dark line = numpy.array([200 , 200 , 200])   # the RGB value < 200 make them all dark
+    mask = inRange(frame , light , )
+    
+
+2] Edge detection - (To detect road)
+    We use Canny Filter : canny(mask , 40 ,10)
+    
+
+3] Line mid Point Estimation (LMP)
+    This is for finding mid point of the road.
+
+
+4] Frame mid point Estimation (FMP)
+    Mid point of camera. We have to meseure angle between the LMP and FMP.
+    How much stearing we have to rotate(theta) will be counted from inverse kinematics.
+
+
+5] Controlling the car process
+
